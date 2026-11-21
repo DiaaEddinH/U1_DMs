@@ -1,0 +1,51 @@
+text.usetex : True
+text.latex.preamble: \usepackage{lmodern}\usepackage{amsmath}\usepackage{amsfonts}\usepackage{amssymb}
+
+
+figure.figsize: 6, 4.5
+
+
+font.family : lmodern
+font.serif : Times New Roman
+font.size : 18
+
+lines.linewidth : 1
+lines.markersize : 7
+lines.markerfacecolor: none
+lines.markeredgewidth : 0.5
+
+errorbar.capsize : 3
+markers.fillstyle : none
+
+#axes.linewidth : 1
+axes.labelsize: 18
+
+legend.fontsize : 18
+legend.handletextpad : 0.3
+legend.frameon: False
+
+xtick.direction : in
+ytick.direction : in
+xtick.top : True
+ytick.right: True
+
+xtick.major.size : 6
+ytick.major.size : 6
+xtick.major.width : 1
+ytick.major.width : 1
+xtick.major.pad: 5.5
+ytick.major.pad: 5
+
+xtick.minor.visible : True
+ytick.minor.visible : True
+xtick.minor.size : 3
+ytick.minor.size : 3
+xtick.minor.width : 1
+ytick.minor.width : 1
+
+xtick.labelsize : 20
+ytick.labelsize : 20
+
+axes.prop_cycle : cycler('marker', ['o', '^', 's', 'p', 'v', 'x']) + cycler('color', ['navy', 'crimson', 'green', 'chocolate', 'indigo', 'darkgoldenrod', ]) + cycler('linestyle', ['-', '--', '-.']*2)
+
+# image.cmap : viridis
