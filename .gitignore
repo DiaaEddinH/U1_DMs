@@ -4,6 +4,9 @@ __pycache__/
 *.pyo
 *.pyd
 
+# VSCode
+.vscode/
+
 # Virtual environments
 venv/
 .env/
@@ -17,9 +20,10 @@ Thumbs.db
 
 # Data
 data/raw/*
-	   data/processed/*
-	   data/checkpoints/*
-	   data/weights/*
+data/samples/*
+data/processed/*
+data/checkpoints/*
+data/weights/*
 
 # Keep directory structure
 !data/raw/.gitkeep

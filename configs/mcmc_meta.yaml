@@ -1,0 +1,17 @@
+name: 4dU1run_000
+
+lattice_size: 4
+lattice_dimension: 4
+
+therm_sweeps: 100
+measure_sweeps: 100
+overrelax_sweeps: 5
+skip_sweeps: 5
+
+seed: null
+samples_dir: ./data/samples
+
+beta:
+  start: 0.9
+  stop: 1.1
+  num: 11
