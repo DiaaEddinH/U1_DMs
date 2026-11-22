@@ -45,23 +45,23 @@ run:
     early_stopping: .INF
     min_delta: 1.0e-4
 
-# sampler:
-#     name: euler
-#     params:
-#         shape: [2_000, 2, 16, 16]
-#         num_steps: 100
-#         schedule_type: uniform
-#         rho: 7.0
-#         keep_history: false
-#         # These are ignored by the Euler sampler; they get absorbed into kwargs
-#         S_churn: 100
-#         S_noise: 1.0
-#         std_range: [0.01, 40]
-#         rescaling_factor: 1.0
-#         winding_area: 4
-#         # These are for the MAALA sampler; ignored by the other samplers.
-#         l_steps: 10
-#         l_stepsize: 1.0e-4
+sampler:
+    name: euler
+    params:
+        shape: [2_000, 2, 16, 16]
+        num_steps: 100
+        schedule_type: uniform
+        rho: 7.0
+        keep_history: false
+        # These are ignored by the Euler sampler; they get absorbed into kwargs
+        S_churn: 100
+        S_noise: 1.0
+        std_range: [0.01, 40]
+        rescaling_factor: 1.0
+        winding_area: 4
+        # These are for the MAALA sampler; ignored by the other samplers.
+        l_steps: 10
+        l_stepsize: 1.0e-4
 
 extra:
     train_beta: 2.000

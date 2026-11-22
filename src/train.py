@@ -27,15 +27,14 @@ if __name__ == "__main__":
     use_ddp = config.trainer.use_ddp
     train_beta = extras["train_beta"]
     train_lattice = extras["train_lattice"]
-    sample_dir = Path(extras["sample_dir"])
+    sample_dir = Path(extras["sample_dir"]) / config.trainer.file_path
+    sample_dir.mkdir(parents=True, exist_ok=True)
 
     ddp_setup(use_ddp=use_ddp)
 
     datasets = [
         U1Dataset(
-            filename=sample_dir / 
-            config.trainer.file_path / 
-            f"beta_{train_beta:.3f}_L{L:g}.npy"
+            filename=sample_dir / f"beta_{train_beta:.3f}_L{L:g}.npy"
         )
         for L in extras["train_lattice"]
     ]
